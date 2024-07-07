@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: transparent; /* Arkaplan rengi saydam olacak */
+            overflow: hidden; /* Videonun taşmasını önlemek için */
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Arka planın opaklığı */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+        .info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .info p {
+            margin: 10px 0;
+        }
+        .contact-info {
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .menu {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .menu a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <h1>Anasayfa</h1>
+        <div class="menu">
+            <a href="index.html">Anasayfa</a> |
+            <a href="hakkinda.html">Hakkında Bilgiler</a> |
+            <a href="iletisim.html">İletişim Bilgileri</a>
+        </div>
+        <div class="info">
+            <p><strong>Merhaba, Ben Ali Kerem!</strong></p>
+            <p><strong>Websiteme hoş geldiniz!</p>
+            <p><strong>Burada benim hakkımda bilgiler öğrenebilirsiniz.</p>
+            <p><strong>Hakkımda bilgiler öğrenmek için <a href="hakkinda.html">Hakkında Bilgiler</a> kategorisine göz atabilirsiniz.</p>
+            </div>
+    </div>
+</body>
+</html>
